@@ -11,7 +11,7 @@ const teamMembers = [
   },
   {
     name: "Sultan",
-    role: "Junior AI Engineer",
+    role: " AI Engineer&& ML Engineer",
     image: "/sultan.jpg",
   },
   {
