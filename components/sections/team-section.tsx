@@ -16,7 +16,7 @@ const teamMembers = [
   },
   {
     name: "Beknur",
-    role: "Founding Engineer & Frontend Developer",
+    role: "Founding Engineer of MythicAI & Frontend Developer",
     image: "/beknur.jpg",
   },
   {
