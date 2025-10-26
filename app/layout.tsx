@@ -8,8 +8,8 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "K2 Think - Error-Free AI Code Generation",
-  description: "AI-powered development that understands architecture, maintains clean code standards, and eliminates vulnerabilities. No mistakes. No compromises.",
+  title: "ReasonScope - AI Visual Debugger for Transparent Reasoning",
+  description: "Turn black-box AI into fully auditable, explainable decisions. Interactive visual debugger powered by K2 Think's revolutionary reasoning transparency.",
   generator: "v0.app",
 }
 

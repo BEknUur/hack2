@@ -6,6 +6,8 @@ import { GrainOverlay } from "@/components/grain-overlay"
 import { WorkSection } from "@/components/sections/work-section"
 import { ServicesSection } from "@/components/sections/services-section"
 import { AboutSection } from "@/components/sections/about-section"
+import { AchievementsSection } from "@/components/sections/achievements-section"
+import { TeamSection } from "@/components/sections/team-section"
 import { ContactSection } from "@/components/sections/contact-section"
 import { MagneticButton } from "@/components/magnetic-button"
 import { useRef, useEffect, useState } from "react"
@@ -79,7 +81,7 @@ export default function Home() {
       const deltaX = touchStartX.current - touchEndX
 
       if (Math.abs(deltaY) > Math.abs(deltaX) && Math.abs(deltaY) > 50) {
-        if (deltaY > 0 && currentSection < 4) {
+        if (deltaY > 0 && currentSection < 6) {
           scrollToSection(currentSection + 1)
         } else if (deltaY < 0 && currentSection > 0) {
           scrollToSection(currentSection - 1)
@@ -149,7 +151,7 @@ export default function Home() {
         const scrollLeft = scrollContainerRef.current.scrollLeft
         const newSection = Math.round(scrollLeft / sectionWidth)
 
-        if (newSection !== currentSection && newSection >= 0 && newSection <= 4) {
+        if (newSection !== currentSection && newSection >= 0 && newSection <= 6) {
           setCurrentSection(newSection)
         }
 
@@ -228,7 +230,7 @@ export default function Home() {
         </button>
 
         <div className="hidden items-center gap-8 md:flex">
-          {["Home", "Work", "Services", "About", "Contact"].map((item, index) => (
+          {["Home", "Work", "Services", "Community", "Team", "About", "Contact"].map((item, index) => (
             <button
               key={item}
               onClick={() => scrollToSection(index)}
@@ -246,7 +248,7 @@ export default function Home() {
           ))}
         </div>
 
-        <MagneticButton variant="secondary" onClick={() => scrollToSection(4)}>
+        <MagneticButton variant="secondary" onClick={() => scrollToSection(6)}>
           Get Started
         </MagneticButton>
       </nav>
@@ -263,34 +265,36 @@ export default function Home() {
         <section className="flex min-h-screen w-screen shrink-0 flex-col justify-end px-6 pb-16 pt-24 md:px-12 md:pb-24">
           <div className="max-w-3xl">
             <div className="mb-4 inline-block animate-in fade-in slide-in-from-bottom-4 rounded-full border border-foreground/20 bg-foreground/15 px-4 py-1.5 backdrop-blur-md duration-700">
-              <p className="font-mono text-xs text-foreground/90">K2 Think Hackathon 2025</p>
+              <p className="font-mono text-xs text-foreground/90">AI Transparency Platform | K2 Think Hackathon</p>
             </div>
             <h1 className="mb-6 animate-in fade-in slide-in-from-bottom-8 font-sans text-6xl font-light leading-[1.1] tracking-tight text-foreground duration-1000 md:text-7xl lg:text-8xl">
               <span className="text-balance">
-                Code that
+                See Why AI
                 <br />
-                actually works
+                Makes Its
+                <br />
+                Decisions
               </span>
             </h1>
             <p className="mb-8 max-w-xl animate-in fade-in slide-in-from-bottom-4 text-lg leading-relaxed text-foreground/90 duration-1000 delay-200 md:text-xl">
               <span className="text-pretty">
-                Building production-ready AI code generation with K2 Think. 48 hours to prove that smarter AI means fewer errors.
+                ReasonScope: An interactive visual debugger for AI reasoning. Turn black-box AI into fully auditable, transparent decision-making. Built on K2 Think's revolutionary reasoning transparency.
               </span>
             </p>
 
             {/* Stats Row */}
             <div className="mb-8 grid animate-in fade-in slide-in-from-bottom-4 grid-cols-3 gap-4 duration-1000 delay-250 md:gap-8">
               <div>
-                <p className="text-2xl font-light text-foreground md:text-3xl lg:text-4xl">60%</p>
-                <p className="text-xs text-foreground/60 md:text-sm">AI code vulnerabilities</p>
+                <p className="text-2xl font-light text-foreground md:text-3xl lg:text-4xl">83%</p>
+                <p className="text-xs text-foreground/60 md:text-sm">Organizations with unexplainable AI errors</p>
               </div>
               <div>
-                <p className="text-2xl font-light text-foreground md:text-3xl lg:text-4xl">99.2%</p>
-                <p className="text-xs text-foreground/60 md:text-sm">Our accuracy rate</p>
+                <p className="text-2xl font-light text-foreground md:text-3xl lg:text-4xl">20%</p>
+                <p className="text-xs text-foreground/60 md:text-sm">Halted production due to unpredictability</p>
               </div>
               <div>
-                <p className="text-2xl font-light text-foreground md:text-3xl lg:text-4xl">87%</p>
-                <p className="text-xs text-foreground/60 md:text-sm">Production ready</p>
+                <p className="text-2xl font-light text-foreground md:text-3xl lg:text-4xl">100%</p>
+                <p className="text-xs text-foreground/60 md:text-sm">Transparent reasoning with K2 Think</p>
               </div>
             </div>
 
@@ -298,7 +302,7 @@ export default function Home() {
               <MagneticButton
                 size="lg"
                 variant="primary"
-                onClick={() => window.open("https://docs.google.com/document/d/1HaCG_SEcHuW6hm2rQiOT3SX101rfz6SslVNunEW5T8c/edit?usp=sharing", "_blank")}
+                onClick={() => window.open("https://docs.google.com/document/d/1XWGMjpdadvhex9gb8mTva7VI-qZouBO2fTsFZZDBsYk/edit?usp=sharing", "_blank")}
               >
                 View Demo
               </MagneticButton>
@@ -320,6 +324,8 @@ export default function Home() {
 
         <WorkSection />
         <ServicesSection />
+        <AchievementsSection />
+        <TeamSection />
         <AboutSection scrollToSection={scrollToSection} />
         <ContactSection />
       </div>

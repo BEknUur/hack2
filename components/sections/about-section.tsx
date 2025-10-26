@@ -21,11 +21,11 @@ export function AboutSection({ scrollToSection }: { scrollToSection?: (index: nu
               }`}
             >
               <h2 className="mb-3 font-sans text-3xl font-light leading-[1.1] tracking-tight text-foreground md:mb-4 md:text-6xl lg:text-7xl">
-                Why This
+                The Black Box
                 <br />
-                Actually
+                Crisis in AI
                 <br />
-                <span className="text-foreground/40">Matters</span>
+                <span className="text-foreground/40">Stops Here</span>
               </h2>
             </div>
 
@@ -36,10 +36,10 @@ export function AboutSection({ scrollToSection }: { scrollToSection?: (index: nu
               style={{ transitionDelay: "200ms" }}
             >
               <p className="max-w-md text-sm leading-relaxed text-foreground/90 md:text-lg">
-                Every developer knows the pain: AI generates code that looks perfect until it crashes in production. We're solving this with K2 Think.
+                83% of organizations have experienced unexplainable AI errors. 20% have halted production rollouts because they cannot trust unpredictable model behavior.
               </p>
               <p className="max-w-md text-sm leading-relaxed text-foreground/90 md:text-lg">
-                In 48 hours, we're building a tool that doesn't just generate code—it validates, secures, and preserves architecture.
+                ReasonScope makes AI reasoning completely transparent—turning opaque decisions into fully auditable, explainable assets.
               </p>
             </div>
           </div>
@@ -47,9 +47,9 @@ export function AboutSection({ scrollToSection }: { scrollToSection?: (index: nu
           {/* Right side - Stats with creative layout */}
           <div className="flex flex-col justify-center space-y-6 md:space-y-12">
             {[
-              { value: "60%", label: "AI Code Issues", sublabel: "Contains critical vulnerabilities", direction: "right" },
-              { value: "99.2%", label: "Our Accuracy", sublabel: "Clean code guarantee", direction: "left" },
-              { value: "$2.1M", label: "Annual Loss", sublabel: "Per company from AI bugs", direction: "right" },
+              { value: "83%", label: "Unexplainable AI Errors", sublabel: "McKinsey 2025 Report", direction: "right" },
+              { value: "20%", label: "Production Halted", sublabel: "Due to unpredictability", direction: "left" },
+              { value: "100%", label: "Transparent Reasoning", sublabel: "With K2 Planner+Solver", direction: "right" },
             ].map((stat, i) => {
               const getRevealClass = () => {
                 if (!isVisible) {

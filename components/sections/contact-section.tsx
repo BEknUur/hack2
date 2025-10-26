@@ -46,11 +46,11 @@ export function ContactSection() {
               }`}
             >
               <h2 className="mb-2 font-sans text-4xl font-light leading-[1.05] tracking-tight text-foreground md:mb-3 md:text-7xl lg:text-8xl">
-                We're Going to
+                Join Us at
                 <br />
-                Abu Dhabi
+                K2 Hackathon
               </h2>
-              <p className="font-mono text-xs text-foreground/60 md:text-base">/ And we need you with us</p>
+              <p className="font-mono text-xs text-foreground/60 md:text-base">/ Abu Dhabi 2025</p>
             </div>
 
             <div className="space-y-4 md:space-y-8">
@@ -61,12 +61,12 @@ export function ContactSection() {
                 style={{ transitionDelay: "150ms" }}
               >
                 <p className="max-w-md text-sm leading-relaxed text-foreground/80 md:text-base">
-                  This isn't just another hackathon. K2 Think in Abu Dhabi is where the world's best AI minds converge. We're not just participating—we're here to win.
+                  We're bringing ReasonScope to the K2 Think Hackathon in Abu Dhabi. We've proven ourselves at Decentrathon 4.0 and HackNU. Now we're ready to compete at the highest level and create transparent AI that changes the industry.
                 </p>
               </div>
 
               <a
-                href="mailto:hello@k2think.dev"
+                href="mailto:hello@reasonscope.dev"
                 className={`group block transition-all duration-700 ${
                   isVisible ? "translate-x-0 opacity-100" : "-translate-x-16 opacity-0"
                 }`}
@@ -74,10 +74,10 @@ export function ContactSection() {
               >
                 <div className="mb-1 flex items-center gap-2">
                   <Mail className="h-3 w-3 text-foreground/60" />
-                  <span className="font-mono text-xs text-foreground/60">Let's Connect</span>
+                  <span className="font-mono text-xs text-foreground/60">Contact Us</span>
                 </div>
                 <p className="text-base text-foreground transition-colors group-hover:text-foreground/70 md:text-2xl">
-                  hello@k2think.dev
+                  ualihanulybeknur@gmail.com
                 </p>
               </a>
 
@@ -89,9 +89,9 @@ export function ContactSection() {
               >
                 <div className="mb-1 flex items-center gap-2">
                   <MapPin className="h-3 w-3 text-foreground/60" />
-                  <span className="font-mono text-xs text-foreground/60">Join Us In</span>
+                  <span className="font-mono text-xs text-foreground/60">What We Need</span>
                 </div>
-                <p className="text-base text-foreground md:text-2xl">Abu Dhabi • K2 Think Hackathon</p>
+                <p className="text-base text-foreground md:text-2xl">K2 API Access • Mentorship • Partnership</p>
               </div>
 
               <div
@@ -122,7 +122,7 @@ export function ContactSection() {
               style={{ transitionDelay: "100ms" }}
             >
               <p className="max-w-md text-sm leading-relaxed text-foreground/80 md:text-base">
-                This is our moment. K2 Think is breakthrough technology. Abu Dhabi is the stage. We want to be on that stage, showcasing the future of AI code generation to the world.
+                We're a battle-tested team competing to build the future of transparent AI. If you believe in our vision—or if you want to support us as mentors, judges, or partners—we'd love to hear from you. Let's make AI explainable and beautiful together.
               </p>
             </div>
 
@@ -167,14 +167,14 @@ export function ContactSection() {
                 }`}
                 style={{ transitionDelay: "400ms" }}
               >
-                <label className="mb-1 block font-mono text-xs text-foreground/60 md:mb-2">How will you help us win?</label>
+                <label className="mb-1 block font-mono text-xs text-foreground/60 md:mb-2">How can you help?</label>
                 <textarea
                   rows={3}
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   required
                   className="w-full border-b border-foreground/30 bg-transparent py-1.5 text-sm text-foreground placeholder:text-foreground/40 focus:border-foreground/50 focus:outline-none md:py-2 md:text-base"
-                  placeholder="Mentor? Engineer? Dataset Provider? Sponsor? Tell us how we take Abu Dhabi together..."
+                  placeholder="Mentorship? K2 API access? Judging? Support? Tell us how we can work together..."
                 />
               </div>
 
@@ -190,10 +190,10 @@ export function ContactSection() {
                   className="w-full disabled:opacity-50"
                   onClick={isSubmitting ? undefined : undefined}
                 >
-                  {isSubmitting ? "Sending..." : "Let's Win This"}
+                  {isSubmitting ? "Sending..." : "Let's Build Together"}
                 </MagneticButton>
                 {submitSuccess && (
-                  <p className="mt-3 text-center font-mono text-sm text-foreground/80">Let's make Abu Dhabi unforgettable. 🚀</p>
+                  <p className="mt-3 text-center font-mono text-sm text-foreground/80">Thank you! We're excited to hear from you. See you at K2! 🚀</p>
                 )}
               </div>
             </form>

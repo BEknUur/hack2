@@ -17,35 +17,35 @@ export function ServicesSection() {
           }`}
         >
           <h2 className="mb-2 font-sans text-5xl font-light tracking-tight text-foreground md:text-6xl lg:text-7xl">
-            Our Promise
+            ReasonScope Features
           </h2>
-          <p className="font-mono text-sm text-foreground/60 md:text-base">/ K2 Think by the numbers</p>
+          <p className="font-mono text-sm text-foreground/60 md:text-base">/ Interactive AI reasoning debugger</p>
         </div>
 
         <div className="grid gap-8 md:grid-cols-2 md:gap-x-16 md:gap-y-12 lg:gap-x-24">
           {[
             {
-              title: "99.2% Accuracy",
-              metric: "vs 67% ChatGPT",
-              description: "Enterprise-grade clean code generation. Every line meets production standards.",
+              title: "Visual Reasoning Maps",
+              metric: "Interactive Graphs",
+              description: "See every step of K2 Think's decision process. Nodes = logical steps, connections = reasoning flow.",
               direction: "top",
             },
             {
-              title: "94.8% Security",
-              metric: "OWASP Compliant",
-              description: "Built-in vulnerability scanning. Zero critical issues before deployment.",
+              title: "Black Box Flight Recorder",
+              metric: "Complete Audit Trail",
+              description: "Capture the entire reasoning chain. Understand exactly why AI made each decision.",
               direction: "right",
             },
             {
-              title: "87% Production Ready",
-              metric: "First time success",
-              description: "Deployable code immediately. Eliminate debugging cycles completely.",
+              title: "Real-time Analysis",
+              metric: "Instant Visualization",
+              description: "Input a scenario (JSON, text) and instantly see K2 Think's complete reasoning rendered as an interactive graph.",
               direction: "left",
             },
             {
-              title: "96.3% Architecture",
-              metric: "Pattern consistency",
-              description: "Preserves your design patterns. 500+ previous interactions remembered.",
+              title: "Finance & Healthcare Ready",
+              metric: "Compliance Built-in",
+              description: "Audit trails for regulated industries. Explainable AI for legal requirements and trust.",
               direction: "bottom",
             },
           ].map((service, i) => (

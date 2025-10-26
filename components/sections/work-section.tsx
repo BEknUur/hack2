@@ -17,32 +17,32 @@ export function WorkSection() {
           }`}
         >
           <h2 className="mb-2 font-sans text-5xl font-light tracking-tight text-foreground md:text-6xl lg:text-7xl">
-            The Hackathon Plan
+            How It Works
           </h2>
-          <p className="font-mono text-sm text-foreground/60 md:text-base">/ 48 hours to production</p>
+          <p className="font-mono text-sm text-foreground/60 md:text-base">/ FastAPI + React + K2 Think</p>
         </div>
 
         <div className="space-y-6 md:space-y-8">
           {[
             {
               number: "01",
-              title: "Infrastructure & K2 Integration",
-              category: "Hours 0-12 • LiteStar + PostgreSQL + K2 API",
-              year: "Setup",
+              title: "FastAPI Backend",
+              category: "K2 Inference endpoint • Request management • Reasoning chain processing",
+              year: "Input ↔ API",
               direction: "left",
             },
             {
               number: "02",
-              title: "Validation Engine & Security",
-              category: "Hours 12-24 • Redis + RabbitMQ + Quality Gates",
-              year: "Core",
+              title: "K2 Planner+Solver",
+              category: "Structured reasoning • Step-by-step decision logic • Transparent chains",
+              year: "Core Logic",
               direction: "right",
             },
             {
               number: "03",
-              title: "UI/UX & Demo Ready",
-              category: "Hours 24-48 • ExpoRouter + shadcn/ui + Docker Deploy",
-              year: "Polish",
+              title: "React + D3.js/Cytoscape",
+              category: "Interactive graph visualization • Real-time rendering • Reasoning maps",
+              year: "Visualization",
               direction: "left",
             },
           ].map((project, i) => (
