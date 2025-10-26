@@ -6,7 +6,7 @@ import Image from "next/image"
 const teamMembers = [
   {
     name: "Turarbek",
-    role: "SWE Engineer",
+    role: "SoftWare Engineer",
     image: "/turarbek.jpg",
   },
   {
@@ -16,7 +16,7 @@ const teamMembers = [
   },
   {
     name: "Beknur",
-    role: "Founding Engineer of MythicAI & Frontend Developer",
+    role: "UI/UX Engineer & Frontend Developer",
     image: "/beknur.jpg",
   },
   {
